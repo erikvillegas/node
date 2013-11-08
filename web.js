@@ -5,7 +5,7 @@ var mongo = require('mongodb');
 
 var mongoUri = process.env.MONGOLAB_URI || process.env.MONGOHQ_URL || 'mongodb://erik:database3@ds053638.mongolab.com:53638/heroku_app19288256';
 
-mongo.db.connect(mongoUri, function (err, db) {
+mongo.Db.connect(mongoUri, function (err, db) {
   // db.collection('mydocs', function(er, collection) {
   //   collection.insert({'mykey': 'myvalue'}, {safe: true}, function(er,rs) {
   //   });
